@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Merely Sweets</string>
+    <string name="location_phone_header">Address &amp; Phone Number</string>
+    <string name="address_text">260 W. Birch St. Brea, CA 92821</string>
+    <string name="phone_text">(714)529-9909</string>
+    <string name="hours_header">\nHours</string>
+    <string name="hours_m_text">M \t 12:30pm - 9:00pm</string>
+    <string name="hours_tth_text">T-Th \t 10:30am - 9:00pm</string>
+    <string name="hours_fs_text">F-S \t 10:30am - 10:30pm</string>
+    <string name="hours_sun_text">Sun \t 10:30am - 9:00pm</string>
+    <string name="menu_button">Menu</string>
+    <string name="email_button">e-mail</string>
+    <string name="banner_desc">Image of the storefront in Brea, CA</string>
+    <string name="forehead_desc">Image of the Merely Sweets Logo</string>
+    <string name="nav_button_desc">Navigation Icon</string>
+    <string name="call_button_desc">Phone Icon</string>
+
+</resources>

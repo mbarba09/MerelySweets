@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Forehead-->
+        <ImageView
+            android:id="@+id/forehead"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightDimenZero"
+            android:layout_weight=".1"
+            android:background="@color/foreheadColor"
+            android:elevation="@dimen/elevationdefault"
+            android:src="@drawable/merelysweets100"
+            android:contentDescription="@string/forehead_desc"/>
+        <!--Banner-->
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightDimenZero"
+            android:layout_weight=".3"
+            android:elevation="@dimen/elevationdefault"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/main2"
+            android:contentDescription="@string/banner_desc"/>
+        <!--Location & Phone Number-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightDimenZero"
+            android:layout_weight=".3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/location-textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/locationHeaderMarginTop"
+                android:text="@string/location_phone_header"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSizeLarge" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/location-vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/iconMarginStart"
+                    android:onClick="navLocation"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:contentDescription="@string/nav_button_desc"/>
+
+                <TextView
+                    android:id="@+id/location-address-textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="navLocation"
+                    android:text="@string/address_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/phone-vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/iconMarginStart"
+                    android:onClick="callNumber"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:contentDescription="@string/call_button_desc"/>
+
+                <TextView
+                    android:id="@+id/phone-textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:onClick="callNumber"
+                    android:text="@string/phone_text" />
+            </RelativeLayout>
+            <!--Hours-->
+            <TextView
+                android:id="@+id/hours-textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hours_header"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSizeLarge" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hours_m_text"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hours_tth_text"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hours_fs_text"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/hoursMarginBottom"
+                android:text="@string/hours_sun_text"
+                android:textAlignment="center" />
+        </LinearLayout>
+        <!--Menu Button (click to send to website)-->
+        <Button
+            android:id="@+id/menu-button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightDimenZero"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/buttonMarginStart"
+            android:layout_marginEnd="@dimen/buttonMarginEnd"
+            android:layout_weight=".05"
+            android:background="@color/buttonDefault"
+            android:backgroundTint="@color/buttonTintDefault"
+            android:elevation="@dimen/elevationSmall"
+            android:onClick="openMenu"
+            android:text="@string/menu_button"
+            android:textAlignment="center"
+            android:textAllCaps="true" />
+        <!--e-mail button (click to send to default email app-->
+        <Button
+            android:id="@+id/email-button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightDimenZero"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/buttonMarginTop"
+            android:layout_marginStart="@dimen/buttonMarginStart"
+            android:layout_marginEnd="@dimen/buttonMarginEnd"
+            android:layout_marginTop="@dimen/buttonMarginBottom"
+            android:layout_weight=".05"
+            android:background="@color/buttonDefault"
+            android:backgroundTint="@color/buttonTintDefault"
+            android:elevation="@dimen/elevationSmall"
+            android:onClick="composeEmail"
+            android:text="@string/email_button"
+            android:textAlignment="center"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</ScrollView>
+
+

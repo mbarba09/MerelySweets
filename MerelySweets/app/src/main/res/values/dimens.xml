@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weightDimenZero">0dp</dimen>
+    <dimen name="elevationSmall">4dp</dimen>
+    <dimen name="elevationdefault">8dp</dimen>
+    <dimen name="locationHeaderMarginTop">24dp</dimen>
+    <dimen name="textSizeLarge">16sp</dimen>
+    <dimen name="iconMarginStart">48dp</dimen>
+    <dimen name="hoursMarginBottom">16dp</dimen>
+    <dimen name="buttonMarginStart">16dp</dimen>
+    <dimen name="buttonMarginEnd">16dp</dimen>
+    <dimen name="buttonMarginTop">8dp</dimen>
+    <dimen name="buttonMarginBottom">8dp</dimen>
+
+</resources>
